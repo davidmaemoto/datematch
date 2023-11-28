@@ -32,11 +32,11 @@ print('Type "out" for going out, "in" for staying in, or "either" if you have no
 firstQ = input('Do you want to go out for your date or stay in?  ')
 if firstQ == "out":
     for idea in ideas.keys():
-        if "out" in ideas[idea]:
+        if "outside" in ideas[idea]:
             updatedideas[idea] = ideas[idea]
 elif firstQ == "in":
     for idea in ideas.keys():
-        if "in" in ideas[idea]:
+        if "inside" in ideas[idea]:
             updatedideas[idea] = ideas[idea]
 elif firstQ == "either":
     updatedideas = ideas
