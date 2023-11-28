@@ -30,7 +30,7 @@ updatedideas =  {}
 print('Welcome to datematch! We will match the perfect date idea for you:')
 print('Type "out" for going out, "in" for staying in, or "either" if you have no preference')
 firstQ = input('Do you want to go out for your date or stay in?  ')
-if firstQ == "out":
+if firstQ == 'out':
     for idea in ideas.keys():
         if "outside" in ideas[idea]:
             updatedideas[idea] = ideas[idea]
@@ -45,10 +45,11 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
     exit()
+
+updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
 print('Type "y" for yes, "n" for no, or "either" if you have no preference')
@@ -68,11 +69,13 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
+
 
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
     exit()
+
+updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
 print('Type "q" for quick (< 2 hours), "l" for long (> 2 hours), or "either" if you have no preference')
@@ -92,11 +95,12 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
 
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
     exit()
+
+updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
 print('Type "a" for active (contains some level of physical activity), "s" for still (no physical activity or movement), or "either" if you have no preference')
@@ -116,11 +120,12 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
 
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
     exit()
+
+updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
 print('Type "under" for a budget under $50, "over" for splurging over $50, or "either" if you have no preference')
@@ -140,11 +145,13 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
+
 
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
     exit()
+
+updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
 print('Type "first" if this is a first date, "dating" if this not a first/early-stage date, or "either" if you have no preference')
@@ -164,7 +171,6 @@ else:
     exit()
 
 ideas = updatedideas
-updatedideas.clear()
 
 if len(ideas.keys()) == 0:
     print('No possible dates found :(')
