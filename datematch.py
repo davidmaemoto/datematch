@@ -28,8 +28,11 @@ ideas["Volunteer together"] = ["outside", "full", "long", "active", "under50", "
 ideas["Go out for a nice meal (italian or sushi are some recs!)"] = ["outside", "hungry", "quick", "still", "over50", "dating"]
 updatedideas =  {}
 print('Welcome to datematch! We will match the perfect date idea for you:')
+print()
 print('Type "out" for going out, "in" for staying in, or "either" if you have no preference')
+print()
 firstQ = input('Do you want to go out for your date or stay in?  ')
+print()
 if firstQ == 'out':
     for idea in ideas.keys():
         if "outside" in ideas[idea]:
@@ -52,8 +55,11 @@ if len(ideas.keys()) == 0:
 updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
+print()
 print('Type "y" for yes, "n" for no, or "either" if you have no preference')
+print()
 secondQ = input('Is you or your date hungry?  ')
+print()
 if secondQ == "y":
     for idea in ideas.keys():
         if "hungry" in ideas[idea]:
@@ -78,8 +84,11 @@ if len(ideas.keys()) == 0:
 updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
+print()
 print('Type "q" for quick (< 2 hours), "l" for long (> 2 hours), or "either" if you have no preference')
+print()
 thirdQ = input('How much time do you have for your date (< or > 2 hours)?  ')
+print()
 if thirdQ == "q":
     for idea in ideas.keys():
         if "quick" in ideas[idea]:
@@ -103,8 +112,11 @@ if len(ideas.keys()) == 0:
 updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
+print()
 print('Type "a" for active (contains some level of physical activity), "s" for still (no physical activity or movement), or "either" if you have no preference')
+print()
 fourthQ = input('Do you want a date with some level of physical activity or without any movement?  ')
+print()
 if fourthQ == "a":
     for idea in ideas.keys():
         if "active" in ideas[idea]:
@@ -128,8 +140,11 @@ if len(ideas.keys()) == 0:
 updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
+print()
 print('Type "under" for a budget under $50, "over" for splurging over $50, or "either" if you have no preference')
+print()
 fifthQ = input('Whats the budget for your date (< or > $50)?  ')
+print()
 if fifthQ == "under":
     for idea in ideas.keys():
         if "under50" in ideas[idea]:
@@ -154,8 +169,11 @@ if len(ideas.keys()) == 0:
 updatedideas = {}
 
 print('Great! Compiling suitable date ideas . . .:')
+print()
 print('Type "first" if this is a first date, "dating" if this not a first/early-stage date, or "either" if you have no preference')
+print()
 sixthQ = input('Is this a first/early-stage date or are you already dating?  ')
+print()
 if sixthQ == "first":
     for idea in ideas.keys():
         if "firstdate" in ideas[idea]:
@@ -177,10 +195,12 @@ if len(ideas.keys()) == 0:
     exit()
 
 print('Great! Finding all suitable date ideas now:')
+print()
 
 if len(ideas) ==1:
     print(f'Here is your optimal date: {ideas.keys()[0]}')
 else:
     print('Here is a list of compatible date ideas:')
+    print()
     for date in ideas.keys():
         print(date)
